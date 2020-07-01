@@ -13,6 +13,13 @@
 		0855F19524ACB27F004611F3 /* UIPageControl+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F19424ACB27F004611F3 /* UIPageControl+LYTheme.m */; };
 		0855F19824ACB3F6004611F3 /* UIProgressView+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F19724ACB3F6004611F3 /* UIProgressView+LYTheme.m */; };
 		0855F19B24ACB50F004611F3 /* UISearchBar+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F19A24ACB50F004611F3 /* UISearchBar+LYTheme.m */; };
+		0855F19E24ACB71D004611F3 /* UISlider+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F19D24ACB71D004611F3 /* UISlider+LYTheme.m */; };
+		0855F1A124ACB8BA004611F3 /* UISwitch+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F1A024ACB8BA004611F3 /* UISwitch+LYTheme.m */; };
+		0855F1A424ACBA65004611F3 /* UITabBar+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F1A324ACBA65004611F3 /* UITabBar+LYTheme.m */; };
+		0855F1A724ACBBF3004611F3 /* UITableView+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F1A624ACBBF3004611F3 /* UITableView+LYTheme.m */; };
+		0855F1AA24ACC163004611F3 /* UITextField+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F1A924ACC163004611F3 /* UITextField+LYTheme.m */; };
+		0855F1AD24ACC242004611F3 /* UITextView+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855F1AC24ACC242004611F3 /* UITextView+LYTheme.m */; };
+		088334B124ACC3CC007F93DF /* UIToolbar+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 088334B024ACC3CC007F93DF /* UIToolbar+LYTheme.m */; };
 		08BF0D1124AC89B8000DFFC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D1024AC89B8000DFFC9 /* AppDelegate.m */; };
 		08BF0D1424AC89B8000DFFC9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D1324AC89B8000DFFC9 /* SceneDelegate.m */; };
 		08BF0D1724AC89B8000DFFC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D1624AC89B8000DFFC9 /* ViewController.m */; };
@@ -39,6 +46,20 @@
 		0855F19724ACB3F6004611F3 /* UIProgressView+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+LYTheme.m"; sourceTree = "<group>"; };
 		0855F19924ACB50F004611F3 /* UISearchBar+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+LYTheme.h"; sourceTree = "<group>"; };
 		0855F19A24ACB50F004611F3 /* UISearchBar+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+LYTheme.m"; sourceTree = "<group>"; };
+		0855F19C24ACB71D004611F3 /* UISlider+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISlider+LYTheme.h"; sourceTree = "<group>"; };
+		0855F19D24ACB71D004611F3 /* UISlider+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISlider+LYTheme.m"; sourceTree = "<group>"; };
+		0855F19F24ACB8BA004611F3 /* UISwitch+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+LYTheme.h"; sourceTree = "<group>"; };
+		0855F1A024ACB8BA004611F3 /* UISwitch+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+LYTheme.m"; sourceTree = "<group>"; };
+		0855F1A224ACBA65004611F3 /* UITabBar+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+LYTheme.h"; sourceTree = "<group>"; };
+		0855F1A324ACBA65004611F3 /* UITabBar+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+LYTheme.m"; sourceTree = "<group>"; };
+		0855F1A524ACBBF3004611F3 /* UITableView+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+LYTheme.h"; sourceTree = "<group>"; };
+		0855F1A624ACBBF3004611F3 /* UITableView+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LYTheme.m"; sourceTree = "<group>"; };
+		0855F1A824ACC163004611F3 /* UITextField+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+LYTheme.h"; sourceTree = "<group>"; };
+		0855F1A924ACC163004611F3 /* UITextField+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LYTheme.m"; sourceTree = "<group>"; };
+		0855F1AB24ACC242004611F3 /* UITextView+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+LYTheme.h"; sourceTree = "<group>"; };
+		0855F1AC24ACC242004611F3 /* UITextView+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LYTheme.m"; sourceTree = "<group>"; };
+		088334AF24ACC3CC007F93DF /* UIToolbar+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+LYTheme.h"; sourceTree = "<group>"; };
+		088334B024ACC3CC007F93DF /* UIToolbar+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+LYTheme.m"; sourceTree = "<group>"; };
 		08BF0D0C24AC89B8000DFFC9 /* LYThemeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYThemeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BF0D0F24AC89B8000DFFC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08BF0D1024AC89B8000DFFC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +153,20 @@
 				0855F19724ACB3F6004611F3 /* UIProgressView+LYTheme.m */,
 				0855F19924ACB50F004611F3 /* UISearchBar+LYTheme.h */,
 				0855F19A24ACB50F004611F3 /* UISearchBar+LYTheme.m */,
+				0855F19C24ACB71D004611F3 /* UISlider+LYTheme.h */,
+				0855F19D24ACB71D004611F3 /* UISlider+LYTheme.m */,
+				0855F19F24ACB8BA004611F3 /* UISwitch+LYTheme.h */,
+				0855F1A024ACB8BA004611F3 /* UISwitch+LYTheme.m */,
+				0855F1A224ACBA65004611F3 /* UITabBar+LYTheme.h */,
+				0855F1A324ACBA65004611F3 /* UITabBar+LYTheme.m */,
+				0855F1A524ACBBF3004611F3 /* UITableView+LYTheme.h */,
+				0855F1A624ACBBF3004611F3 /* UITableView+LYTheme.m */,
+				0855F1A824ACC163004611F3 /* UITextField+LYTheme.h */,
+				0855F1A924ACC163004611F3 /* UITextField+LYTheme.m */,
+				0855F1AB24ACC242004611F3 /* UITextView+LYTheme.h */,
+				0855F1AC24ACC242004611F3 /* UITextView+LYTheme.m */,
+				088334AF24ACC3CC007F93DF /* UIToolbar+LYTheme.h */,
+				088334B024ACC3CC007F93DF /* UIToolbar+LYTheme.m */,
 				08BF0D3724ACA182000DFFC9 /* LYActionCmd.h */,
 				08BF0D3824ACA182000DFFC9 /* LYActionCmd.m */,
 			);
@@ -208,15 +243,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0855F1A724ACBBF3004611F3 /* UITableView+LYTheme.m in Sources */,
+				0855F1A124ACB8BA004611F3 /* UISwitch+LYTheme.m in Sources */,
 				08BF0D2D24AC8EF0000DFFC9 /* LYThemeManager.m in Sources */,
 				0855F19524ACB27F004611F3 /* UIPageControl+LYTheme.m in Sources */,
+				0855F1AD24ACC242004611F3 /* UITextView+LYTheme.m in Sources */,
 				08BF0D1724AC89B8000DFFC9 /* ViewController.m in Sources */,
 				08BF0D1124AC89B8000DFFC9 /* AppDelegate.m in Sources */,
 				0855F19824ACB3F6004611F3 /* UIProgressView+LYTheme.m in Sources */,
+				0855F1A424ACBA65004611F3 /* UITabBar+LYTheme.m in Sources */,
+				0855F1AA24ACC163004611F3 /* UITextField+LYTheme.m in Sources */,
+				088334B124ACC3CC007F93DF /* UIToolbar+LYTheme.m in Sources */,
 				0855F18C24ACA5C9004611F3 /* LYTestTheme.m in Sources */,
 				08BF0D2224AC89BD000DFFC9 /* main.m in Sources */,
 				08BF0D3324ACA06E000DFFC9 /* UIView+LYTheme.m in Sources */,
 				0855F19224ACAFE7004611F3 /* UINavigationBar+LYTheme.m in Sources */,
+				0855F19E24ACB71D004611F3 /* UISlider+LYTheme.m in Sources */,
 				08BF0D3024AC9A25000DFFC9 /* NSObject+LYTheme.m in Sources */,
 				08BF0D1424AC89B8000DFFC9 /* SceneDelegate.m in Sources */,
 				08BF0D3924ACA182000DFFC9 /* LYActionCmd.m in Sources */,

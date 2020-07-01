@@ -22,18 +22,24 @@
 }
 - (void)runCmdWithThemeIndex:(NSInteger)index
 {
-      index = MAX(0, index);
-        index = MIN(index, self.themeElems.count - 1);
-        NSObject * obj = self.themeElems[index];
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [self.target performSelector:self.sel withObject:obj];
-    #pragma clang diagnostic pop
+    if (self.themeElems.count == 0) {
+        return ;
+    }
+    index = MAX(0, index);
+    index = MIN(index, self.themeElems.count - 1);
+    NSObject * obj = self.themeElems[index];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [self.target performSelector:self.sel withObject:obj];
+#pragma clang diagnostic pop
 }
 @end
 @implementation LYBackgroundCmd
 - (void) runCmdWithThemeIndex:(NSInteger)index
 {
+    if (self.themeElems.count == 0) {
+        return ;
+    }
     index = MAX(0, index);
     index = MIN(index, self.themeElems.count - 1);
     NSObject * obj = self.themeElems[index];
