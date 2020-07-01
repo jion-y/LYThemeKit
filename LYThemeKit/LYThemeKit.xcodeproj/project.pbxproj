@@ -14,6 +14,7 @@
 		08BF0D1C24AC89BD000DFFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BF0D1B24AC89BD000DFFC9 /* Assets.xcassets */; };
 		08BF0D1F24AC89BD000DFFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BF0D1D24AC89BD000DFFC9 /* LaunchScreen.storyboard */; };
 		08BF0D2224AC89BD000DFFC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D2124AC89BD000DFFC9 /* main.m */; };
+		08BF0D2D24AC8EF0000DFFC9 /* LYThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D2C24AC8EF0000DFFC9 /* LYThemeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,10 @@
 		08BF0D1E24AC89BD000DFFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08BF0D2024AC89BD000DFFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08BF0D2124AC89BD000DFFC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08BF0D2924AC8AC9000DFFC9 /* LYThemeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYThemeKit.h; sourceTree = "<group>"; };
+		08BF0D2A24AC8B67000DFFC9 /* LYThemeKitPotocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYThemeKitPotocol.h; sourceTree = "<group>"; };
+		08BF0D2B24AC8EF0000DFFC9 /* LYThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYThemeManager.h; sourceTree = "<group>"; };
+		08BF0D2C24AC8EF0000DFFC9 /* LYThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYThemeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		08BF0D0E24AC89B8000DFFC9 /* LYThemeKit */ = {
 			isa = PBXGroup;
 			children = (
+				08BF0D2824AC8AA5000DFFC9 /* LYThemeKit */,
 				08BF0D0F24AC89B8000DFFC9 /* AppDelegate.h */,
 				08BF0D1024AC89B8000DFFC9 /* AppDelegate.m */,
 				08BF0D1224AC89B8000DFFC9 /* SceneDelegate.h */,
@@ -72,6 +78,17 @@
 				08BF0D1D24AC89BD000DFFC9 /* LaunchScreen.storyboard */,
 				08BF0D2024AC89BD000DFFC9 /* Info.plist */,
 				08BF0D2124AC89BD000DFFC9 /* main.m */,
+			);
+			path = LYThemeKit;
+			sourceTree = "<group>";
+		};
+		08BF0D2824AC8AA5000DFFC9 /* LYThemeKit */ = {
+			isa = PBXGroup;
+			children = (
+				08BF0D2924AC8AC9000DFFC9 /* LYThemeKit.h */,
+				08BF0D2A24AC8B67000DFFC9 /* LYThemeKitPotocol.h */,
+				08BF0D2B24AC8EF0000DFFC9 /* LYThemeManager.h */,
+				08BF0D2C24AC8EF0000DFFC9 /* LYThemeManager.m */,
 			);
 			path = LYThemeKit;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BF0D2D24AC8EF0000DFFC9 /* LYThemeManager.m in Sources */,
 				08BF0D1724AC89B8000DFFC9 /* ViewController.m in Sources */,
 				08BF0D1124AC89B8000DFFC9 /* AppDelegate.m in Sources */,
 				08BF0D2224AC89BD000DFFC9 /* main.m in Sources */,
