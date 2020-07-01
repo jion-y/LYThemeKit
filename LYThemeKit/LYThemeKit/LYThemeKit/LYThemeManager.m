@@ -84,14 +84,14 @@ static LYThemeManager * theme_manager = nil;
     }
 }
 
-- (void)addCmd:(id<LYThemeProtocol>)cmd
+- (void)addCmd:(id<LYThemeCmdProtocol>)cmd
 {
     if (cmd && ![self.hashTable containsObject:cmd])
     {
         [self.hashTable addObject:cmd];
     }
 }
-- (void)removeCmd:(id<LYThemeProtocol>)cmd
+- (void)removeCmd:(id<LYThemeCmdProtocol>)cmd
 {
     if (cmd && [self.hashTable containsObject:cmd])
     {

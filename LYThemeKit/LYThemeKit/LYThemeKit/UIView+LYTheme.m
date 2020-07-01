@@ -7,7 +7,6 @@
 //
 
 #import "UIView+LYTheme.h"
-#import "NSObject+LYTheme.h"
 #import "LYActionCmd.h"
 #import "LYThemeManager.h"
 @interface NSObject()
@@ -18,12 +17,12 @@
 -(void)setThemeBackGroundColor:(NSArray<UIColor *> *)color
 {
     SEL sel = @selector(setBackgroundColor:);
-    LYBackgroundCmd * cmd = [[LYBackgroundCmd alloc] initWith:color target:self sel:sel];
-    NSString * selStr = NSStringFromSelector(sel);
-    [self.cmdMap setObject:cmd forKey:selStr];
-    [cmd runCmdWithThemeIndex: [LYThemeManager themeManager].theme.currentShowThemeIndex];
-    
-    [[LYThemeManager themeManager] addCmd:self];
+    [self registerCmdWithTheme:color withSel:sel];
 }
 
+- (void)setThemeTintColor:(NSArray<UIColor *> *)color
+{
+    SEL sel = @selector(setTintColor:);
+    [self registerCmdWithTheme:color withSel:sel];
+}
 @end

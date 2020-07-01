@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NSObject+LYTheme.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (LYTheme)
+@interface UIView (LYTheme)<LYThemeCmdProtocol>
 
 -(void)setThemeBackGroundColor:(NSArray<UIColor *> *)color;
+- (void)setThemeTintColor:(NSArray<UIColor *> *)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

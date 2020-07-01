@@ -8,9 +8,8 @@
 
 #import "NSObject+LYTheme.h"
 #import <objc/runtime.h>
-
-static void *DKViewDeallocHelperKey;
-
+#import "LYActionCmd.h"
+#import "LYThemeManager.h"
 @interface NSObject()
 @property(nonatomic,strong)NSMutableDictionary<NSString *,id<LYThemeCmdProtocol>> * cmdMap;
 @end
@@ -34,5 +33,17 @@ static void *DKViewDeallocHelperKey;
     {
         [cmd runCmdWithThemeIndex:index];
     }
+}
+- (void)registerActionCmd:(id<LYThemeCmdProtocol>)cmd forKey:(NSString *)key
+{
+    [self.cmdMap setObject:cmd forKey:key];
+    [cmd runCmdWithThemeIndex: [LYThemeManager themeManager].theme.currentShowThemeIndex];
+    [[LYThemeManager themeManager] addCmd:self];
+}
+- (void)registerCmdWithTheme:(NSArray *)element withSel:(SEL)sel
+{
+    LYActionCmd * cmd = [[LYActionCmd alloc] initWith:element target:self sel:sel];
+    NSString * selStr = NSStringFromSelector(sel);
+    [self registerActionCmd:cmd forKey:selStr];
 }
 @end
