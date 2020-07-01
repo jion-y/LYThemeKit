@@ -12,11 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LYThemeManager : NSObject
 
-+(void)regesterWithTheme:(NSObject<LYThemeProtocol>)theme;
+@property(nonatomic,strong,readonly)NSObject<LYThemeProtocol> * theme;
+
++(void)regesterWithTheme:(NSObject<LYThemeProtocol> *)theme;
 
 +(LYThemeManager *)themeManager;
 
-@property(nonatomic,strong,readonly)NSObject<LYThemeProtocol> theme;
+- (void)addCmd:(id<LYThemeProtocol>)cmd;
+- (void)removeCmd:(id<LYThemeProtocol>)cmd;
 
 @end
 

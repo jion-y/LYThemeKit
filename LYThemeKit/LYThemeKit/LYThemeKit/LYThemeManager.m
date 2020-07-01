@@ -11,7 +11,7 @@
 static LYThemeManager * theme_manager = nil;
 @interface LYThemeManager ()
 @property(nonatomic,strong)NSObject<LYThemeProtocol> *theme;
-@property(nonatomic,strong)NSHashTable<id<LYThemeCmdProtocol>> * hashTable;
+@property(nonatomic,strong)NSHashTable * hashTable;
 @end
 @implementation LYThemeManager
 - (instancetype)initWithTheme:(NSObject<LYThemeProtocol> *)theme
@@ -83,8 +83,23 @@ static LYThemeManager * theme_manager = nil;
         });
     }
 }
+
+- (void)addCmd:(id<LYThemeProtocol>)cmd
+{
+    if (cmd && ![self.hashTable containsObject:cmd])
+    {
+        [self.hashTable addObject:cmd];
+    }
+}
+- (void)removeCmd:(id<LYThemeProtocol>)cmd
+{
+    if (cmd && [self.hashTable containsObject:cmd])
+    {
+        [self.hashTable removeObject:cmd];
+    }
+}
 #pragma mark -
-- (NSHashTable<id<LYThemeCmdProtocol>> *) hasTable
+- (NSHashTable *) hashTable
 {
     if (_hashTable == nil)
     {

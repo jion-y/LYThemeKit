@@ -9,5 +9,6 @@
 #ifndef LYThemeKit_h
 #define LYThemeKit_h
 #import "LYThemeManager.h"
-
+#import "NSObject+LYTheme.h"
+#import "UIView+LYTheme.h"
 #endif /* LYThemeKit_h */
