@@ -3,6 +3,6 @@
 
 ## 安装
 
-pod 'LYThemeKit', '~> 0.0.4'
+pod   'LYThemeKit', '~> 0.0.5'
 
 # 使用
