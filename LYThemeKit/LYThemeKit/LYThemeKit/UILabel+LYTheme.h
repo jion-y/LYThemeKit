@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol LYThemeCmdProtocol;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UILabel (LYTheme)<LYThemeCmdProtocol>
+@interface UILabel (LYTheme)
 
 - (void)ly_textColor:(NSArray *)color;
 - (void)ly_font:(NSArray *)fonts;

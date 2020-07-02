@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol LYThemeCmdProtocol;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UINavigationBar (LYTheme)<LYThemeCmdProtocol>
+@interface UINavigationBar (LYTheme)
 - (void)ly_barTintColor:(NSArray *)colors;
 @end
 
