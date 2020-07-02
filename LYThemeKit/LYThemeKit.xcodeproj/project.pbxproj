@@ -31,7 +31,8 @@
 		08BF0D3024AC9A25000DFFC9 /* NSObject+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D2F24AC9A25000DFFC9 /* NSObject+LYTheme.m */; };
 		08BF0D3324ACA06E000DFFC9 /* UIView+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D3224ACA06E000DFFC9 /* UIView+LYTheme.m */; };
 		08BF0D3924ACA182000DFFC9 /* LYActionCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BF0D3824ACA182000DFFC9 /* LYActionCmd.m */; };
-		08E5E85024ADD2420042FCAC /* LYConfigCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5E84F24ADD2420042FCAC /* LYConfigCmd.m */; };
+		08E5E85024ADD2420042FCAC /* LYConfigColorCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5E84F24ADD2420042FCAC /* LYConfigColorCmd.m */; };
+		08E5E85324ADE1970042FCAC /* UIColor+LYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E5E85224ADE1960042FCAC /* UIColor+LYTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,8 +84,10 @@
 		08BF0D3224ACA06E000DFFC9 /* UIView+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYTheme.m"; sourceTree = "<group>"; };
 		08BF0D3724ACA182000DFFC9 /* LYActionCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYActionCmd.h; sourceTree = "<group>"; };
 		08BF0D3824ACA182000DFFC9 /* LYActionCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActionCmd.m; sourceTree = "<group>"; };
-		08E5E84E24ADD2420042FCAC /* LYConfigCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConfigCmd.h; sourceTree = "<group>"; };
-		08E5E84F24ADD2420042FCAC /* LYConfigCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConfigCmd.m; sourceTree = "<group>"; };
+		08E5E84E24ADD2420042FCAC /* LYConfigColorCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYConfigColorCmd.h; sourceTree = "<group>"; };
+		08E5E84F24ADD2420042FCAC /* LYConfigColorCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYConfigColorCmd.m; sourceTree = "<group>"; };
+		08E5E85124ADE1960042FCAC /* UIColor+LYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LYTheme.h"; sourceTree = "<group>"; };
+		08E5E85224ADE1960042FCAC /* UIColor+LYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LYTheme.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,10 +173,12 @@
 				0855F1AC24ACC242004611F3 /* UITextView+LYTheme.m */,
 				088334AF24ACC3CC007F93DF /* UIToolbar+LYTheme.h */,
 				088334B024ACC3CC007F93DF /* UIToolbar+LYTheme.m */,
+				08E5E85124ADE1960042FCAC /* UIColor+LYTheme.h */,
+				08E5E85224ADE1960042FCAC /* UIColor+LYTheme.m */,
 				08BF0D3724ACA182000DFFC9 /* LYActionCmd.h */,
 				08BF0D3824ACA182000DFFC9 /* LYActionCmd.m */,
-				08E5E84E24ADD2420042FCAC /* LYConfigCmd.h */,
-				08E5E84F24ADD2420042FCAC /* LYConfigCmd.m */,
+				08E5E84E24ADD2420042FCAC /* LYConfigColorCmd.h */,
+				08E5E84F24ADD2420042FCAC /* LYConfigColorCmd.m */,
 			);
 			path = LYThemeKit;
 			sourceTree = "<group>";
@@ -262,8 +267,9 @@
 				0855F18C24ACA5C9004611F3 /* LYTestTheme.m in Sources */,
 				08BF0D2224AC89BD000DFFC9 /* main.m in Sources */,
 				08BF0D3324ACA06E000DFFC9 /* UIView+LYTheme.m in Sources */,
+				08E5E85324ADE1970042FCAC /* UIColor+LYTheme.m in Sources */,
 				0855F19224ACAFE7004611F3 /* UINavigationBar+LYTheme.m in Sources */,
-				08E5E85024ADD2420042FCAC /* LYConfigCmd.m in Sources */,
+				08E5E85024ADD2420042FCAC /* LYConfigColorCmd.m in Sources */,
 				0855F19E24ACB71D004611F3 /* UISlider+LYTheme.m in Sources */,
 				08BF0D3024AC9A25000DFFC9 /* NSObject+LYTheme.m in Sources */,
 				08BF0D1424AC89B8000DFFC9 /* SceneDelegate.m in Sources */,

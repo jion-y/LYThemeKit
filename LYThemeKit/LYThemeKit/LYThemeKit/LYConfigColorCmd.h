@@ -10,7 +10,7 @@
 #import "LYThemeKitPotocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LYConfigCmd : NSObject<LYThemeCmdProtocol>
+@interface LYConfigColorCmd : NSObject<LYThemeCmdProtocol>
 @property(nonatomic,strong)NSString * themKey;
 @property(nonatomic,assign)SEL sel;
 @property(nonatomic,weak)NSObject * target;

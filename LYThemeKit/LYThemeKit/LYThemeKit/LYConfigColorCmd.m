@@ -6,9 +6,9 @@
 //  Copyright © 2020 anita. All rights reserved.
 //
 
-#import "LYConfigCmd.h"
+#import "LYConfigColorCmd.h"
 #import "LYThemeManager.h"
-@implementation LYConfigCmd
+@implementation LYConfigColorCmd
 -(void)execute
 {
     NSObject * obj = [self getThemeValue];
