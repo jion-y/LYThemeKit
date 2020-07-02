@@ -36,7 +36,14 @@ static LYThemeManager * theme_manager = nil;
 {
     return theme_manager;
 }
-
+- (NSInteger)themeIndex
+{
+    return self.theme.currentShowThemeIndex;
+}
+- (NSDictionary *)themeConfigDic
+{
+    return [[NSDictionary alloc] init];
+}
 - (void)addObserver
 {
     [_theme addObserver:self forKeyPath:@"currentShowThemeIndex" options:NSKeyValueObservingOptionNew context:@"currentShowThemeIndex"];
@@ -69,7 +76,7 @@ static LYThemeManager * theme_manager = nil;
       
         for (id<LYThemeCmdProtocol> cmd in self.hashTable)
         {
-            [cmd runCmdWithThemeIndex:currenIndex];
+            [cmd execute];
         }
     };
     if ([NSThread isMainThread])

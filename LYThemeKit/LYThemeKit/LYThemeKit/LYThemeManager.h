@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(LYThemeManager *)themeManager;
 
+- (NSInteger)themeIndex;
+- (NSDictionary *)themeConfigDic;
 - (void)addCmd:(id<LYThemeCmdProtocol>)cmd;
 - (void)removeCmd:(id<LYThemeCmdProtocol>)cmd;
 

@@ -26,18 +26,18 @@
     }
     return cmds;
 }
-- (void)runCmdWithThemeIndex:(NSInteger)index
+- (void)execute
 {
     NSArray * cmds = [self.cmdMap allValues];
     for (id<LYThemeCmdProtocol>  cmd in cmds)
     {
-        [cmd runCmdWithThemeIndex:index];
+        [cmd execute];
     }
 }
 - (void)registerActionCmd:(id<LYThemeCmdProtocol>)cmd forKey:(NSString *)key
 {
     [self.cmdMap setObject:cmd forKey:key];
-    [cmd runCmdWithThemeIndex: [LYThemeManager themeManager].theme.currentShowThemeIndex];
+    [cmd execute];
     [[LYThemeManager themeManager] addCmd:self];
 }
 - (void)registerCmdWithTheme:(NSArray *)element withSel:(SEL)sel

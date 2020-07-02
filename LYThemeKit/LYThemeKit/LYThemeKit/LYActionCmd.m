@@ -7,7 +7,7 @@
 //
 
 #import "LYActionCmd.h"
-
+#import "LYThemeManager.h"
 @implementation LYActionCmd
 
 - (instancetype)initWith:(NSArray *)themes target:(id)target sel:(SEL)sel
@@ -20,11 +20,12 @@
     }
     return self;
 }
-- (void)runCmdWithThemeIndex:(NSInteger)index
+- (void)execute
 {
     if (self.themeElems.count == 0) {
         return ;
     }
+    NSInteger index = [[LYThemeManager themeManager] themeIndex];
     index = MAX(0, index);
     index = MIN(index, self.themeElems.count - 1);
     NSObject * obj = self.themeElems[index];
@@ -42,32 +43,6 @@
             NSAssert(NO, msg);
         }
     }
-#pragma clang diagnostic pop
-}
-@end
-@implementation LYBackgroundCmd
-- (void) runCmdWithThemeIndex:(NSInteger)index
-{
-    if (self.themeElems.count == 0) {
-        return ;
-    }
-    index = MAX(0, index);
-    index = MIN(index, self.themeElems.count - 1);
-    NSObject * obj = self.themeElems[index];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    if (self.target)
-      {
-          if ([self.target respondsToSelector:self.sel])
-          {
-              [self.target performSelector:self.sel withObject:obj];
-          }
-          else
-          {
-              NSString * msg = [NSString stringWithFormat:@"target not found sel %@",NSStringFromSelector(self.sel)];
-              NSAssert(NO, msg);
-          }
-      }
 #pragma clang diagnostic pop
 }
 @end

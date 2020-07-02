@@ -11,11 +11,10 @@
 /// 当前显示的主题
 @property (assign, nonatomic) NSInteger currentShowThemeIndex;
 
-
 @end
 
 @protocol LYThemeCmdProtocol <NSObject>
 
-- (void)runCmdWithThemeIndex:(NSInteger)index;
+- (void)execute;
 
 @end

@@ -19,7 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
                   target:(id)target
                      sel:(SEL)sel;
 @end
-@interface LYBackgroundCmd : LYActionCmd
-
-@end
 NS_ASSUME_NONNULL_END
