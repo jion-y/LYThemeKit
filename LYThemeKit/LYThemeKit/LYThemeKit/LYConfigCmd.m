@@ -6,7 +6,7 @@
 //  Copyright © 2020 anita. All rights reserved.
 //
 
-#import "LYConfigColorCmd.h"
+#import "LYConfigCmd.h"
 #import "LYThemeManager.h"
 #import "UIColor+LYTheme.h"
 
