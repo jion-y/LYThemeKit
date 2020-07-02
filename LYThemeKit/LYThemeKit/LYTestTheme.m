@@ -10,4 +10,13 @@
 
 @implementation LYTestTheme
 @synthesize currentShowThemeIndex;
+@synthesize themeCmd;
+
+- (void)switchThemes
+{
+    if (self.themeCmd) {
+        [self.themeCmd execute];
+    }
+}
+
 @end

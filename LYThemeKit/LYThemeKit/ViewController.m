@@ -10,7 +10,7 @@
 #import "LYThemeKit.h"
 #import "LYTestTheme.h"
 @interface ViewController ()
-
+@property(nonatomic,strong)LYTestTheme * theme;
 @end
 
 @implementation ViewController
@@ -20,15 +20,17 @@
     // Do any additional setup after loading the view.
     LYTestTheme * test = [[LYTestTheme alloc] init];
     [LYThemeManager regesterWithTheme:test];
+    self.theme = test;
     
     [self.view setThemeBackGroundColor:@[[UIColor redColor],[UIColor blueColor]]];
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSInteger index = [LYThemeManager themeManager].theme.currentShowThemeIndex;
+    NSInteger index = self.theme.currentShowThemeIndex;
     index = (index + 1) %2;
-    [LYThemeManager themeManager].theme.currentShowThemeIndex = index;
+    self.theme.currentShowThemeIndex = index;
+    [self.theme switchThemes];
+    
 }
 @end

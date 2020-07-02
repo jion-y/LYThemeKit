@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LYTestTheme : NSObject <LYThemeProtocol>
 
+- (void) switchThemes;
+
 @end
 
 NS_ASSUME_NONNULL_END

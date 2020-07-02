@@ -10,7 +10,7 @@
 #import "LYThemeKitPotocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LYThemeManager : NSObject
+@interface LYThemeManager : NSObject<LYThemeCmdProtocol>
 
 @property(nonatomic,strong,readonly)NSObject<LYThemeProtocol> * theme;
 

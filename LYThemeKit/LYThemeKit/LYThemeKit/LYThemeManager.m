@@ -42,32 +42,14 @@ static LYThemeManager * theme_manager = nil;
 }
 - (NSDictionary *)themeConfigDic
 {
-    return [[NSDictionary alloc] init];
-}
-- (void)addObserver
-{
-    [_theme addObserver:self forKeyPath:@"currentShowThemeIndex" options:NSKeyValueObservingOptionNew context:@"currentShowThemeIndex"];
-}
-- (void)removeObserver
-{
-    [_theme removeObserver:self forKeyPath:@"currentShowThemeIndex"];
+    return self.theme.configDic;
 }
 - (void)setTheme:(id<LYThemeProtocol>)theme
 {
     if (![_theme isEqual:theme])
     {
-        [self removeObserver];
         _theme = theme;
-        [self addObserver];
-    }
-}
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    NSString * cntext = (__bridge NSString *)context;
-    if ([cntext isEqualToString:@"currentShowThemeIndex"])
-    {
-        NSInteger newIndex = [change[NSKeyValueChangeNewKey] integerValue];
-        [self runCmdWithThemeIndex:newIndex];
+        _theme.themeCmd = self;
     }
 }
 - (void)runCmdWithThemeIndex:(NSInteger)index
@@ -89,6 +71,10 @@ static LYThemeManager * theme_manager = nil;
             runCmdBlock(index);
         });
     }
+}
+- (void)execute
+{
+    [self runCmdWithThemeIndex:self.theme.currentShowThemeIndex];
 }
 
 - (void)addCmd:(id<LYThemeCmdProtocol>)cmd
