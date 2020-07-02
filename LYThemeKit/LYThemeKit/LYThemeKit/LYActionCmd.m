@@ -30,7 +30,15 @@
     NSObject * obj = self.themeElems[index];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    [self.target performSelector:self.sel withObject:obj];
+    if ([self.target respondsToSelector:self.sel])
+    {
+        [self.target performSelector:self.sel withObject:obj];
+    }
+    else
+    {
+        NSString * msg = [NSString stringWithFormat:@"target not found sel %@",NSStringFromSelector(self.sel)];
+        NSAssert(NO, msg);
+    }
 #pragma clang diagnostic pop
 }
 @end
